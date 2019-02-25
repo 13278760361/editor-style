@@ -34,7 +34,7 @@
 .ql-container .ql-editor.scroll-disabled {
   overflow: hidden;
 }
-.ql-container .image-overlay {
+.ql-container .ql-image-overlay {
   display: flex;
   position: absolute;
   box-sizing: border-box;
@@ -44,7 +44,7 @@
   -webkit-user-select: none;
   user-select: none;
 }
-.ql-container .image-overlay .image-size {
+.ql-container .ql-image-overlay .ql-image-size {
   position: absolute;
   padding: 4px 8px;
   text-align: center;
@@ -59,7 +59,7 @@
   display: inline-block;
   width: auto;
 }
-.ql-container .image-overlay .image-toolbar {
+.ql-container .ql-image-overlay .ql-image-toolbar {
   position: relative;
   text-align: center;
   box-sizing: border-box;
@@ -70,17 +70,17 @@
   min-height: 24px;
   z-index: 100;
 }
-.ql-container .image-overlay .image-toolbar span {
+.ql-container .ql-image-overlay .ql-image-toolbar span {
   display: inline-block;
   cursor: pointer;
   padding: 5px;
   font-size: 12px;
   border-right: 1px solid #fff;
 }
-.ql-container .image-overlay .image-toolbar span:last-child {
+.ql-container .ql-image-overlay .ql-image-toolbar span:last-child {
   border-right: 0;
 }
-.ql-container .image-overlay .image-toolbar span.triangle-up {
+.ql-container .ql-image-overlay .ql-image-toolbar span.triangle-up {
   padding: 0;
   position: absolute;
   top: -12px;
@@ -92,7 +92,7 @@
   border-style: solid;
   border-color: transparent transparent black transparent;
 }
-.ql-container .image-overlay .image-handle {
+.ql-container .ql-image-overlay .ql-image-handle {
   position: absolute;
   height: 12px;
   width: 12px;
@@ -175,13 +175,13 @@
   counter-increment: list-0;
 }
 .ql-editor ol li:before {
-  content: counter(list-0, decimal) '. ';
+  content: counter(list-0,decimal) '. ';
 }
 .ql-editor ol li.ql-indent-1 {
   counter-increment: list-1;
 }
 .ql-editor ol li.ql-indent-1:before {
-  content: counter(list-1, lower-alpha) '. ';
+  content: counter(list-1,lower-alpha) '. ';
 }
 .ql-editor ol li.ql-indent-1 {
   counter-reset: list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
@@ -190,7 +190,7 @@
   counter-increment: list-2;
 }
 .ql-editor ol li.ql-indent-2:before {
-  content: counter(list-2, lower-roman) '. ';
+  content: counter(list-2,lower-roman) '. ';
 }
 .ql-editor ol li.ql-indent-2 {
   counter-reset: list-3 list-4 list-5 list-6 list-7 list-8 list-9;
@@ -199,7 +199,7 @@
   counter-increment: list-3;
 }
 .ql-editor ol li.ql-indent-3:before {
-  content: counter(list-3, decimal) '. ';
+  content: counter(list-3,decimal) '. ';
 }
 .ql-editor ol li.ql-indent-3 {
   counter-reset: list-4 list-5 list-6 list-7 list-8 list-9;
@@ -208,7 +208,7 @@
   counter-increment: list-4;
 }
 .ql-editor ol li.ql-indent-4:before {
-  content: counter(list-4, lower-alpha) '. ';
+  content: counter(list-4,lower-alpha) '. ';
 }
 .ql-editor ol li.ql-indent-4 {
   counter-reset: list-5 list-6 list-7 list-8 list-9;
@@ -217,7 +217,7 @@
   counter-increment: list-5;
 }
 .ql-editor ol li.ql-indent-5:before {
-  content: counter(list-5, lower-roman) '. ';
+  content: counter(list-5,lower-roman) '. ';
 }
 .ql-editor ol li.ql-indent-5 {
   counter-reset: list-6 list-7 list-8 list-9;
@@ -226,7 +226,7 @@
   counter-increment: list-6;
 }
 .ql-editor ol li.ql-indent-6:before {
-  content: counter(list-6, decimal) '. ';
+  content: counter(list-6,decimal) '. ';
 }
 .ql-editor ol li.ql-indent-6 {
   counter-reset: list-7 list-8 list-9;
@@ -235,7 +235,7 @@
   counter-increment: list-7;
 }
 .ql-editor ol li.ql-indent-7:before {
-  content: counter(list-7, lower-alpha) '. ';
+  content: counter(list-7,lower-alpha) '. ';
 }
 .ql-editor ol li.ql-indent-7 {
   counter-reset: list-8 list-9;
@@ -244,7 +244,7 @@
   counter-increment: list-8;
 }
 .ql-editor ol li.ql-indent-8:before {
-  content: counter(list-8, lower-roman) '. ';
+  content: counter(list-8,lower-roman) '. ';
 }
 .ql-editor ol li.ql-indent-8 {
   counter-reset: list-9;
@@ -253,7 +253,7 @@
   counter-increment: list-9;
 }
 .ql-editor ol li.ql-indent-9:before {
-  content: counter(list-9, decimal) '. ';
+  content: counter(list-9,decimal) '. ';
 }
 .ql-editor .ql-indent-1:not(.ql-direction-rtl) {
   padding-left: 2em;
@@ -377,7 +377,7 @@
   text-align: right;
 }
 .ql-editor.ql-blank::before {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0,0,0,0.6);
   content: attr(data-placeholder);
   font-style: italic;
   pointer-events: none;
