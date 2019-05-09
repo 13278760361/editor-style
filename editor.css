@@ -85,7 +85,7 @@
   position: absolute;
   top: -12px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translatex(-50%);
   width: 0;
   height: 0;
   border-width: 6px;
@@ -175,13 +175,13 @@
   counter-increment: list-0;
 }
 .ql-editor ol li:before {
-  content: counter(list-0,decimal) '. ';
+  content: counter(list-0, decimal) '. ';
 }
 .ql-editor ol li.ql-indent-1 {
   counter-increment: list-1;
 }
 .ql-editor ol li.ql-indent-1:before {
-  content: counter(list-1,lower-alpha) '. ';
+  content: counter(list-1, lower-alpha) '. ';
 }
 .ql-editor ol li.ql-indent-1 {
   counter-reset: list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
@@ -190,7 +190,7 @@
   counter-increment: list-2;
 }
 .ql-editor ol li.ql-indent-2:before {
-  content: counter(list-2,lower-roman) '. ';
+  content: counter(list-2, lower-roman) '. ';
 }
 .ql-editor ol li.ql-indent-2 {
   counter-reset: list-3 list-4 list-5 list-6 list-7 list-8 list-9;
@@ -199,7 +199,7 @@
   counter-increment: list-3;
 }
 .ql-editor ol li.ql-indent-3:before {
-  content: counter(list-3,decimal) '. ';
+  content: counter(list-3, decimal) '. ';
 }
 .ql-editor ol li.ql-indent-3 {
   counter-reset: list-4 list-5 list-6 list-7 list-8 list-9;
@@ -208,7 +208,7 @@
   counter-increment: list-4;
 }
 .ql-editor ol li.ql-indent-4:before {
-  content: counter(list-4,lower-alpha) '. ';
+  content: counter(list-4, lower-alpha) '. ';
 }
 .ql-editor ol li.ql-indent-4 {
   counter-reset: list-5 list-6 list-7 list-8 list-9;
@@ -217,7 +217,7 @@
   counter-increment: list-5;
 }
 .ql-editor ol li.ql-indent-5:before {
-  content: counter(list-5,lower-roman) '. ';
+  content: counter(list-5, lower-roman) '. ';
 }
 .ql-editor ol li.ql-indent-5 {
   counter-reset: list-6 list-7 list-8 list-9;
@@ -226,7 +226,7 @@
   counter-increment: list-6;
 }
 .ql-editor ol li.ql-indent-6:before {
-  content: counter(list-6,decimal) '. ';
+  content: counter(list-6, decimal) '. ';
 }
 .ql-editor ol li.ql-indent-6 {
   counter-reset: list-7 list-8 list-9;
@@ -235,7 +235,7 @@
   counter-increment: list-7;
 }
 .ql-editor ol li.ql-indent-7:before {
-  content: counter(list-7,lower-alpha) '. ';
+  content: counter(list-7, lower-alpha) '. ';
 }
 .ql-editor ol li.ql-indent-7 {
   counter-reset: list-8 list-9;
@@ -244,7 +244,7 @@
   counter-increment: list-8;
 }
 .ql-editor ol li.ql-indent-8:before {
-  content: counter(list-8,lower-roman) '. ';
+  content: counter(list-8, lower-roman) '. ';
 }
 .ql-editor ol li.ql-indent-8 {
   counter-reset: list-9;
@@ -253,7 +253,7 @@
   counter-increment: list-9;
 }
 .ql-editor ol li.ql-indent-9:before {
-  content: counter(list-9,decimal) '. ';
+  content: counter(list-9, decimal) '. ';
 }
 .ql-editor .ql-indent-1:not(.ql-direction-rtl) {
   padding-left: 2em;
@@ -377,7 +377,7 @@
   text-align: right;
 }
 .ql-editor.ql-blank::before {
-  color: rgba(0,0,0,0.6);
+  color: rgba(0, 0, 0, 0.6);
   content: attr(data-placeholder);
   font-style: italic;
   pointer-events: none;
